@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../common/Header';
 import FetchData from '../../services/FetchData';
 import './home.css';
+//Bonjour
 
 class Home extends Component {
   constructor(props) {
