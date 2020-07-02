@@ -1,0 +1,141 @@
+/* Géneral */
+body {
+  font-family: Arial, serif;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.clear-fix-after::after{
+  clear: both;
+  display: block;
+}
+
+/* Variables CSS */
+:root {
+  --main-bg-color: #6b747D;
+}
+
+.main-bg-color, article {
+  background-color: var(--main-bg-color);
+}
+
+
+.display-none {
+  display: none;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  z-index: -1000;
+}
+
+/* titres */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  background-color: #6c757d ;
+  color: white;
+  padding: 10px 0; /*top-bottom right-left*/
+}
+
+h1 img {
+  height: 4rem; /* taille de la lettre M à la racine */
+  width: 4rem; /* 1rem(r pour racine) = 16px */
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.ima {
+  padding-left: 100px;
+}
+/* cartes */
+.column article {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 0 30px 0;
+}
+
+/* navigation */
+nav {
+  display: table; /* prend que le minimum de la place dispo */
+  margin: 10px auto;
+} 
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  padding: 20px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-bg-color);
+  border-radius: 8px;
+  margin: 0 15px;
+}
+
+/* les colonnes */
+#columns {
+  width: 100vw;
+  overflow-x: scroll; /* permet d'avoir un scroll sur l'element qui l'est en dessous */
+}
+
+#wrapper-columns {
+  min-width: 400vw;
+}
+
+.column {
+  float: left;
+  width: 95vw;
+  margin: 0 2.5vw;
+  background: whitesmoke;
+}
+
+.column>div{
+  padding: 20px;
+}
+
+/* footer */
+footer {
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* media queries */
+/* pour des ecrans plus grand que 768px */
+@media screen and (min-width: 768px) {
+  #columns {
+    width: auto;
+  }
+
+  #wrapper-columns {
+    min-width: auto;
+  }
+
+  .column {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+  }
+}
+
+

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AATA,IASI,CACA,CAAC,CAVC;EACJ,MAAM,EAAE,aAAa;CACtB;;AAOD,AACI,IADA,CACA,CAAC,CAAC;EACA,KAAK,ECZK,IAAI;EDOlB,MAAM,EAOY,GAAG,CAPN,KAAK,CAAC,GAAG;CAQrB",
+    "sources": [
+        "../sass/test.scss",
+        "../sass/variables.scss"
+    ],
+    "names": [],
+    "file": "test.css"
+}

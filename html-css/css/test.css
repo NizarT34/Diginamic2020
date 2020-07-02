@@ -1,0 +1,9 @@
+body p {
+  border: 1px solid red;
+}
+
+body p {
+  color: blue;
+  border: 5px solid red;
+}
+/*# sourceMappingURL=test.css.map */

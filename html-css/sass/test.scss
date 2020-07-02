@@ -1,0 +1,18 @@
+@import "variables";
+
+%bred {
+  border: 1px solid red;
+}
+
+// Mixin
+@mixin bred($width) {
+  border: $width solid red;
+}
+// Imbrication
+body {
+    p {
+      color: $primary-color;
+      @extend %bred;
+      @include bred(5px);
+    }
+}

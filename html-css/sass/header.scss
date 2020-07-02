@@ -1,0 +1,33 @@
+ 
+/* titres */
+  
+/* logo */
+h1 {
+    font-size: 4rem;
+    background-color: #6c757d ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    img {
+        height: 4rem; /* taille de la lettre M à la racine */
+        width: 4rem; /* 1rem(r pour racine) = 16px */
+    }
+
+    >div { // le "&" c'est pour dire que l'id représente le selecteur du haut (ici div)
+        
+        &#emo {
+            position: relative;
+            top: 6px;
+        }
+
+        display: flex;
+        align-items: flex-start;
+        >div.top-char {
+            margin-top: -10px;
+        }
+    }
+}
+

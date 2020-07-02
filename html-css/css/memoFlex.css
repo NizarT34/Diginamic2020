@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, serif;
+}
+
+/* Variables CSS */
+:root {
+    --main-bg-color: #6b747D;
+}
+  
+.main-bg-color {
+    background-color: var(--main-bg-color);
+}
+  
+.display-none {
+    display: none;
+  }
+  
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    z-index: -1000;
+  }
+
+
+h1 img {
+    height: 4rem; /* taille de la lettre M à la racine */
+    width: 4rem; /* 1rem(r pour racine) = 16px */
+}
+
+/* titres */
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+  
+h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+/* logo */
+h1 {
+  font-size: 4rem;
+  background-color: #6c757d ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ima {
+  padding-left: 100px;
+}
+
+h1>div {
+  display: flex;
+  align-items: flex-start;
+}
+
+h1>div>div.top-char {
+  margin-top: -10px;
+}
+
+#emo {
+  position: relative;
+  top: 6px;
+}
+
+
+/* flex navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  margin: 1rem;
+}
+
+/* colonne */
+
+#columns {
+  /* Le overflow fait en sorte que l'élément
+  ne s'agrandisse pas même si ses enfants
+  sont plus larges que lui */
+  overflow-x: scroll;
+}
+
+#wrapper-column{
+  display: flex;
+  justify-content: space-between;
+  min-width: 400vw;
+}
+
+.colomn {
+  flex-basis: 99vw;
+}
+
+/* cartes */
+.column article {
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 0 30px 0;
+  background-color: var(--main-bg-color);
+}
+
+/* footer */
+footer {
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-bg-color);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* Media screen  */
+@media screen and (min-width: 768px) {
+  #wrapper-column {
+    min-width: auto;
+  }
+
+  .column {
+    flex-basis: 20%;
+  }
+
+}
